@@ -1,0 +1,18 @@
+services:
+  nodeapi:
+    build: .
+    container_name: nodeapi
+    ports:
+      - "7001:3000"
+    volumes:
+      - ./:/app
+      - /app/node_modules
+    dns:
+      - 127.0.0.1
+      - 8.8.8.8
+      - 8.8.4.4
+    extra_hosts:
+      - "nodeapi.local:0.0.0.0"
+    # Removi o comando de reinstalar - deixe o Dockerfile cuidar disso
+    # Se precisar rodar em modo dev, use:
+    # command: yarn dev
