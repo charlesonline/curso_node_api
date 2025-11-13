@@ -1,0 +1,215 @@
+type: collection.insomnia.rest/5.0
+name: Node API
+meta:
+  id: wrk_377a36a1c08d41638659c19eff3acafa
+  created: 1762038176925
+  modified: 1762038176925
+  description: ""
+collection:
+  - name: Learn
+    meta:
+      id: fld_62d21e4f055340d2b37ae840f2b4cbc6
+      created: 1762132440705
+      modified: 1762132440705
+      sortKey: -1762132440705
+      description: ""
+    children:
+      - url: http://localhost:3000/cursos/3
+        name: Listagem de Um Curso
+        meta:
+          id: req_20a2e76e7a054098bde3deac0cb93880
+          created: 1762038214060
+          modified: 1762132451938
+          isPrivate: false
+          description: ""
+          sortKey: -1762132449592
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.2.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3000/cursos
+        name: Listagem de Todos os Cursos
+        meta:
+          id: req_7e5ee2a4f0264641a80cb8f44544f29b
+          created: 1762092067194
+          modified: 1762132464978
+          isPrivate: false
+          description: ""
+          sortKey: -1762132449642
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.2.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3000/cursos
+        name: Criar um curso
+        meta:
+          id: req_669b5259be6a49348389afb55f669e66
+          created: 1762092298678
+          modified: 1762132466655
+          isPrivate: false
+          description: ""
+          sortKey: -1762132449567
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"nome": "CHARLES"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.2.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3000/cursos/0
+        name: Alterar um curso
+        meta:
+          id: req_2fc2f7e6e49a4d3c9fe30bd10daa0c50
+          created: 1762092807570
+          modified: 1762132460838
+          isPrivate: false
+          description: ""
+          sortKey: -1762132449542
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"nome": "PHP7.4"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.2.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3000/cursos/999
+        name: Deletar Um Cursos
+        meta:
+          id: req_0d944950defd4c659208bc4aa3bf8787
+          created: 1762093031696
+          modified: 1762132462721
+          isPrivate: false
+          description: ""
+          sortKey: -1762132449517
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.2.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Api MyHouse
+    meta:
+      id: fld_90ef146920f1458cba97d2ab44e27125
+      created: 1762132491285
+      modified: 1762136089004
+      sortKey: -1762132491285
+      description: ""
+    children:
+      - name: Session
+        meta:
+          id: fld_3b60b89ae5544821829bf1609b0d60ef
+          created: 1762136063823
+          modified: 1762136063823
+          sortKey: -1762136063823
+          description: ""
+      - name: House
+        meta:
+          id: fld_82c778c702bb4cf9a2a952b5dfca8b2f
+          created: 1762136095765
+          modified: 1762136095765
+          sortKey: -1762136095765
+          description: ""
+      - name: Dashboard
+        meta:
+          id: fld_030868566c054e5c9d97e1de462b2936
+          created: 1762185661850
+          modified: 1762185661850
+          sortKey: -1762185661850
+          description: ""
+      - name: Reserve
+        meta:
+          id: fld_d2b3d30fd74c49efa8bd51fe38f704c4
+          created: 1762222938560
+          modified: 1762222938560
+          sortKey: -1762222938560
+          description: ""
+  - name: Tasklist
+    meta:
+      id: fld_06fed8f3c31845149fd45c44c7ad1557
+      created: 1762309591966
+      modified: 1762309591966
+      sortKey: -1762309591966
+      description: ""
+    children:
+      - name: Users
+        meta:
+          id: fld_a4bfdeb86db341659b12472ac4de60af
+          created: 1762826840012
+          modified: 1762826840012
+          sortKey: -1762826840012
+          description: ""
+      - name: Session
+        meta:
+          id: fld_5e1b02722c734b2989bdbe9e8c198598
+          created: 1762828603866
+          modified: 1762828603866
+          sortKey: -1762828603866
+          description: ""
+      - name: Tasks
+        meta:
+          id: fld_5f7f7199ce944f7c98cb83f5979211f3
+          created: 1762918980857
+          modified: 1762918984589
+          sortKey: -1762828603916
+          description: ""
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_acb508a78a407a839730a352ba80b965b4fc2e99
+    created: 1762038176933
+    modified: 1762038176933
+environments:
+  name: Base Environment
+  meta:
+    id: env_acb508a78a407a839730a352ba80b965b4fc2e99
+    created: 1762038176929
+    modified: 1762038176929
+    isPrivate: false
